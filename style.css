@@ -14,9 +14,39 @@ body {
     padding: 2em;
     background-color: black;
     color: white;
+    justify-content: space-between;
+}
+
+ul {
+    display: flex;
+    list-style-type: none;
+    gap: 2em;
+}
+
+a {
+    text-decoration: none;
+    color: white;
 }
 
 .content {
     display: flex;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
+}
+
+.content-header {
+    display: flex;
+    padding: 2em;
+}
+
+.projects {
+    display: flex;
+    gap: 2em;
+}
+
+.box {
+    height: 200px;
+    width: 200px;
+    border: 2px dashed black;
 }
