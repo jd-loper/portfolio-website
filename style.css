@@ -11,6 +11,11 @@ body {
 
 .header {
     display: flex;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
     padding: 2em;
     background-color: black;
     color: white;
@@ -28,6 +33,10 @@ a {
     color: white;
 }
 
+a:hover {
+    color: white;
+}
+
 .content {
     display: flex;
     flex-direction: column;
@@ -42,11 +51,14 @@ a {
 
 .projects {
     display: flex;
+    flex-direction: column;
     gap: 2em;
+    padding: 2em;
 }
 
 .box {
     height: 200px;
     width: 200px;
     border: 2px dashed black;
+    box-shadow: 5px 10px 10px gray;
 }
