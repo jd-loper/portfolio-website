@@ -12,11 +12,6 @@ body {
 
 .header {
     display: flex;
-    overflow: hidden;
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
     padding: 2em;
     background-color: black;
     color: white;
@@ -55,26 +50,44 @@ button:active {
 
 .content {
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
 .content-header {
     display: flex;
+    justify-content: center;
+    align-items: center;
     padding: 2em;
+    font-size: larger;
+    font-weight: bold;
 }
 
 .projects {
     display: flex;
     flex-direction: column;
-    gap: 2em;
-    padding: 2em;
+    gap: 3em;
 }
 
 .box {
     height: 200px;
     width: 200px;
-    border: 2px dashed black;
+    border: 1px solid black;
     box-shadow: 5px 10px 10px gray;
+}
+
+.text {
+    display: flex;
+    flex-direction: column;
+    gap: 3em;
+    margin-left: 3em;
+    width: 300px;
+    flex-wrap: wrap;
+}
+
+p {
+    display: flex;
+    height: 200px;
+    border: 1px solid black;
+    width: 300px;
 }
