@@ -52,14 +52,13 @@ button:active {
     font-weight: bold;
     text-decoration: overline;
     letter-spacing: 3px;
-    text-decoration-color: orangered;
+    text-decoration-color: navy;
 }
 
 .content {
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-wrap: nowrap;
 }
 
 .projects {
@@ -80,7 +79,7 @@ button:active {
 }
 
 .box:hover {
-    background: orangered;
+    background: navy;
     transition: 0.4s;
 }
 
@@ -94,6 +93,4 @@ button:active {
 .text {
     width: 300px;
     height: 200px;
-    display: flex;
-    align-items: center;
 }
