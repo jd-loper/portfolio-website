@@ -5,11 +5,6 @@
     padding: 0;
 }
 
-body {
-    display: flex;
-    flex-direction: column;
-}
-
 .header {
     display: flex;
     padding: 2em;
@@ -56,42 +51,49 @@ button:active {
     font-size: 36px;
     font-weight: bold;
     text-decoration: overline;
+    letter-spacing: 3px;
+    text-decoration-color: orangered;
 }
 
 .content {
     display: flex;
-    border: 1px solid black;
     justify-content: center;
     align-items: center;
+    flex-wrap: nowrap;
 }
 
 .projects {
     display: flex;
     flex-direction: column;
     gap: 3em;
-    border: 1px solid black;
     width: fit-content;
 }
 
 .box {
     height: 200px;
     width: 200px;
+    background: white;
+    transition: 0.4s;
     border: 1px solid black;
-    box-shadow: 5px 10px 10px gray;
+    box-shadow: 5px 10px gray;
+    cursor: pointer;
+}
+
+.box:hover {
+    background: orangered;
+    transition: 0.4s;
 }
 
 .info {
     display: flex;
-    border: 1px solid black;
     flex-direction: column;
     gap: 3em;
     margin-left: 2em;
 }
 
 .text {
+    width: 300px;
+    height: 200px;
     display: flex;
     align-items: center;
-    border: 1px solid black;
-    height: 200px;
-    width: 400px;
 }
