@@ -81,3 +81,15 @@ button:active {
     background: black;
     transition: 0.4s;
 }
+
+.footer {
+    display: flex;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: black;
+    color: white;
+    justify-content: center;
+    padding: 1em;
+}
