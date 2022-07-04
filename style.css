@@ -64,7 +64,9 @@ button:active {
 .projects {
     display: flex;
     align-items: center;
-    gap: 3em;
+    flex-wrap: wrap;
+    width: 1200px;
+    gap: 1em;
 }
 
 .box {
@@ -80,6 +82,11 @@ button:active {
 .box:hover {
     background: black;
     transition: 0.4s;
+}
+
+.info-text {
+    display: block;
+    width: 300px;
 }
 
 .footer {
