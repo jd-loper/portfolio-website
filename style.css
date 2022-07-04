@@ -35,7 +35,7 @@ button {
 }
 
 button:hover {
-    color: gray;
+    color: lightgray;
     cursor: pointer;
 }
 
@@ -65,8 +65,12 @@ button:active {
     display: flex;
     align-items: center;
     flex-wrap: wrap;
-    width: 1200px;
+    width: 1100px;
     gap: 1em;
+    padding: 1em;
+    border: 1px solid lightgrey;
+    border-radius: 12px;
+    box-shadow: 5px 5px 10px gray;
 }
 
 .box {
@@ -74,13 +78,13 @@ button:active {
     width: 200px;
     background: white;
     transition: 0.4s;
-    border: 1px solid black;
-    box-shadow: 5px 10px gray;
+    border: 1px solid lightgray;
+    border-radius: 12px;
     cursor: pointer;
 }
 
 .box:hover {
-    background: black;
+    background: lightgray;
     transition: 0.4s;
 }
 
