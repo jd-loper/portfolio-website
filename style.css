@@ -1,16 +1,20 @@
 h1 {
-    color: red;
+    color: black;
     font-weight: bold;
     font-family: Verdana, sans-serif;
     text-align: center;
 }
 
-h1:hover {
-    text-decoration: underline;
+h1:hover span {
+    display: none;
+}
+
+h1:hover:before {
+    content: "{ My Portfolio }";
 }
 
 div {
-    margin: 40px;
+    margin: 10px;
     padding: 0 20px;
     background-color: white;
     text-align: center;
