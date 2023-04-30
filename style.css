@@ -10,10 +10,12 @@ h1:hover span {
 }
 
 h1:hover:before {
-    content: "{ My Portfolio }";
+    content: "{ Portfolio }";
 }
 
 div {
+    display: flex;
+    justify-content: center;
     margin: 10px;
     padding: 0 20px;
     background-color: white;
