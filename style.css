@@ -1,26 +1,14 @@
-.h1 {
-    display: flex;
-    justify-content: center;
-    color: black;
-    margin: auto;
-    font-family: Verdana, sans-serif;
-    font-size: 18px;
-    letter-spacing: 4px;
-}
-
-.h1:hover span {
-    display: none;
-}
-
-.h1:hover:before {
-    content: "{ Portfolio }";
+body {
+    background-image: linear-gradient(to bottom, white, lightgrey);
+    margin: 0;
+    padding: 0;
+    height: 100vh;
 }
 
 .nav {
     display: flex;
     justify-content: center;
     margin: auto;
-    background-color: white;
 }
 
 a {
@@ -41,7 +29,7 @@ a:after {
     content: "";
     position: absolute;
     height: 2px;
-    background-color: lightgrey;
+    background-color: darkblue;
     width: 0;
     left: 50%;
     bottom: 0;
@@ -53,7 +41,7 @@ a:after {
 }
 
 a:hover {
-    color: lightgrey;
+    color: darkblue;
 }
 
 a:hover:after {
@@ -63,20 +51,22 @@ a:hover:after {
 .home-content {
     display: flex;
     justify-content: center;
-    width: 800px;
+    width: 900px;
     height: 500px;
     margin: auto;
     padding: 10px;
     font-family: Verdana, sans-serif;
     font-size: 13px;
-    border: 3px solid lightgrey;
     border-radius: 18px;
+    border-color: lightgrey;
+    border-style: solid;
+    border-width: 3px;
 }
 
 .footer {
     display: flex;
     justify-content: center;
-    width: 800px;
+    width: 900px;
     margin: 10px auto;
     padding: 10px;
     font-family: Verdana, sans-serif;
