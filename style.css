@@ -1,5 +1,5 @@
 body {
-    background-image: linear-gradient(to bottom, white, lightgrey);
+    background-image: linear-gradient(to bottom, black, lightblue);
     margin: 0;
     padding: 0;
     height: 100vh;
@@ -15,7 +15,7 @@ a {
     display: inline-block;
     font-family: Verdana, sans-serif;
     text-decoration: none;
-    color: black;
+    color: white;
     font-size: 11px;
     letter-spacing: 2px;
     text-transform: uppercase;
@@ -29,7 +29,7 @@ a:after {
     content: "";
     position: absolute;
     height: 2px;
-    background-color: darkblue;
+    background-color: lightgrey;
     width: 0;
     left: 50%;
     bottom: 0;
@@ -41,7 +41,7 @@ a:after {
 }
 
 a:hover {
-    color: darkblue;
+    color: lightgray;
 }
 
 a:hover:after {
@@ -50,17 +50,23 @@ a:hover:after {
 
 .home-content {
     display: flex;
-    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.5);
     width: 900px;
     height: 500px;
     margin: auto;
     padding: 10px;
-    font-family: Verdana, sans-serif;
-    font-size: 13px;
     border-radius: 18px;
     border-color: lightgrey;
     border-style: solid;
     border-width: 3px;
+}
+
+.home-text {
+    display: flex;
+    letter-spacing: 2px;
+    font-family: Verdana, sans-serif;
+    font-size: 13px;
+    color: white;
 }
 
 .footer {
@@ -71,6 +77,9 @@ a:hover:after {
     padding: 10px;
     font-family: Verdana, sans-serif;
     font-size: 13px;
+    color: white;
+    letter-spacing: 2px;
     border: 3px solid lightgrey;
     border-radius: 18px;
+    background-color: rgba(0, 0, 0, 0.5);
 }
