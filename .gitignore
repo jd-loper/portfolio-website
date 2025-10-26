@@ -1,0 +1,64 @@
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Node / npm / pnpm / yarn
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# Vite
+# Build output
+/dist/
+# Vite cache
+/.vite/
+
+# Generic build outputs
+/build/
+/out/
+/types-node/
+
+# Testing & coverage
+/coverage/
+/.nyc_output/
+
+# TypeScript
+*.tsbuildinfo
+
+# Environment files
+.env
+.env.*
+!.env.example
+
+# Editor folders
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+.idea/
+.history/
+*.swp
+*.swo
+
+# Caches
+.cache/
+.parcel-cache/
+.eslintcache
+.stylelintcache
+
+# Framework/hosting (harmless if unused)
+.next/
+.nuxt/
+.svelte-kit/
+.vercel/
+.netlify/
+storybook-static/
+
+# OS (Windows)
+Thumbs.db
+$RECYCLE.BIN/
