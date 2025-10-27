@@ -5,6 +5,10 @@ This is my website to host all of my notable personal projects.
 
 This project is set up with React + Vite (JavaScript).
 
+### Node version
+
+This project targets Node 22 (LTS). An `.nvmrc` is included, so you can run `nvm use` to switch. The `engines` field in `package.json` requires Node >= 22.12.0.
+
 ### Scripts
 
 - `npm run dev` – Start the local dev server
