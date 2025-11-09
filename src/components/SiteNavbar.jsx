@@ -1,45 +1,22 @@
-import Container from 'react-bootstrap/Container'
-import Nav from 'react-bootstrap/Nav'
-import Navbar from 'react-bootstrap/Navbar'
-import NavDropdown from 'react-bootstrap/NavDropdown'
-
-export default function SiteNavbar({
-  brand = 'My Portfolio',
-  links = [
-    { href: '#projects', label: 'Projects' },
-    { href: '#about', label: 'About' },
-    { href: '#contact', label: 'Contact' },
-  ],
-  dropdown = {
-    title: 'My CV',
-    items: [
-      { href: '#cv', label: 'View CV' },
-      { href: '#blog', label: 'Download CV' },
-    ],
-  },
-}) {
+function SiteNavbar() {
   return (
-    <Navbar bg="dark" variant="dark" expand="lg" sticky="top">
-      <Container>
-        <Navbar.Brand href="#home">{brand}</Navbar.Brand>
-        <Navbar.Toggle aria-controls="main-navbar" />
-        <Navbar.Collapse id="main-navbar">
-          <Nav className="me-auto">
-            {links.map((l) => (
-              <Nav.Link key={l.href} href={l.href}>{l.label}</Nav.Link>
-            ))}
-            {dropdown && (
-              <NavDropdown title={dropdown.title} id="nav-dropdown">
-                {dropdown.items.map((item) => (
-                  <NavDropdown.Item key={item.href} href={item.href}>
-                    {item.label}
-                  </NavDropdown.Item>
-                ))}
-              </NavDropdown>
-            )}
-          </Nav>
-        </Navbar.Collapse>
-      </Container>
-    </Navbar>
+  <nav class="navbar navbar-expand-lg bg-dark" data-bs-theme="dark">
+    <div class="container-fluid">
+      <span class="navbar-brand">My Portfolio</span>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbar">
+        <div class="navbar-nav">
+          <a class="nav-link" href="#">Home</a>
+          <a class="nav-link" href="#">About</a>
+          <a class="nav-link" href="#">Projects</a>
+          <a class="nav-link" href="#">Contact</a>
+        </div>
+      </div>
+    </div>
+  </nav>
   )
 }
+
+export default SiteNavbar;
