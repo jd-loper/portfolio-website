@@ -7,11 +7,13 @@ import Contact from './components/Contact';
 export default function App() {
   return (
     <>
-    <SiteNavbar />
-    <Hero />
-    <About />
-    <ProjectCards />
-    <Contact />
+      <SiteNavbar />
+      <div className="app-wrapper">
+        <Hero />
+        <About />
+        <ProjectCards />
+        <Contact />
+      </div>
     </>
   )
 }
