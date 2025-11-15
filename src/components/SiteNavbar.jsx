@@ -1,7 +1,7 @@
 function SiteNavbar() {
   return (
     <nav className="navbar navbar-expand-lg bg-dark fixed-top" data-bs-theme="dark" aria-label="Primary navigation">
-      <div className="container-fluid">
+      <div className="container-fluid" style={{ maxWidth: '1400px', margin: '0 auto' }}>
         <span className="navbar-brand">My Portfolio</span>
         <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
           <span className="navbar-toggler-icon"></span>
